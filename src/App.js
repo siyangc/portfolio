@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import TopNavBar from './components/topNavBar/topNavBar';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <TopNavBar />
+      </div>
+    )
+  }
 }
 
-export default App;
+
+//Top - NavBar tel\address\links
+    //NavBar
+    //Section1 name position  right photo
+    //Section2 introduction
+    //Section3 Skills
+    //Section4 My works
+    //Section5 My interests
+    //Section6 Contact me
+
