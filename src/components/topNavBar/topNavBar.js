@@ -16,8 +16,9 @@ export default class topNavBar extends Component {
 }
 
 const topNavBarStyle = {
-    background: "#ff3344",
+    backgroundColor: "rgba(0, 0, 0, 0.4)",
     height: "30px",
     width: "100%",
     display: "flex",
+    position: "fixed"    
 }

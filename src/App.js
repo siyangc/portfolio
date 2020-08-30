@@ -1,12 +1,25 @@
 import React, { Component } from 'react'
 import TopNavBar from './components/topNavBar/topNavBar';
-
+import NavBar from './components/navBar/navBar'
+import About from './components/about/about'
+import Intro from './components/intro/intro'
+import Skills from './components/skills/skills'
+import Works from './components/works/works'
+import Hobbies from './components/hobbies/hobbies'
+import Contact from './components/contact/contact'
 
 export default class App extends Component {
   render() {
     return (
       <div>
         <TopNavBar />
+        <NavBar />
+        <About />
+        <Intro />
+        <Skills />
+        <Works />
+        <Hobbies />
+        <Contact />
       </div>
     )
   }

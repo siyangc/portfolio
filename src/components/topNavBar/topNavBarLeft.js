@@ -4,8 +4,8 @@ export default class topNavBarLeft extends Component {
     render() {
         return (
             <div style={topNavBarLeftStyle}>
-                <p>
-                    contact: chengsiyang.developer@gmail.com
+                <p style={contextStyle}>
+                    chengsiyang.developer@gmail.com
                 </p>                
             </div>
         )
@@ -13,6 +13,13 @@ export default class topNavBarLeft extends Component {
 }
 
 const topNavBarLeftStyle = {
-    width: "250px",
-    fontSize: "0.8rem",
+    minWidth: "250px",    
+    lineHeight: "20px",
+    padding: "5px"
+}
+
+const contextStyle = {
+    fontSize: "0.7rem",
+    fontWeight: "bold",
+    color: "gold"
 }
