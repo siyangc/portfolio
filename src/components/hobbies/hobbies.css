@@ -1,0 +1,22 @@
+#hobbies{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+}
+
+#hobbies h1{
+    margin-bottom:80px;
+}
+#hobby{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#hobby img{
+    width: 50px;
+    display: block;
+    margin: 30px    
+}

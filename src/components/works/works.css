@@ -1,0 +1,19 @@
+#works{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#works h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#works .projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+#works .project{
+    width:300px;
+    margin: auto;
+    padding: 10px;
+}
