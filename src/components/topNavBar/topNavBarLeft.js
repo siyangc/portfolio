@@ -13,7 +13,7 @@ export default class topNavBarLeft extends Component {
 }
 
 const topNavBarLeftStyle = {
-    minWidth: "250px",    
+    minWidth: "200px",    
     lineHeight: "20px",
     padding: "5px"
 }
