@@ -1,37 +1,60 @@
-import React, { Component } from 'react'
-import TopNavBar from './components/topNavBar/topNavBar';
-import NavBar from './components/navBar/navBar'
-import About from './components/about/about'
-import Intro from './components/intro/intro'
-import Skills from './components/skills/skills'
-import Works from './components/works/works'
-import Hobbies from './components/hobbies/hobbies'
-import Contact from './components/contact/contact'
+import React, {useState, useEffect,useRef } from 'react'
+import Blue from './components/blue'
+import Red from './components/red'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <TopNavBar />
-        <NavBar />
-        <About />
-        <Intro />
-        <Skills />
-        <Works />
-        <Hobbies />
-        <Contact />
-      </div>
-    )
+import {useSelector, useDispatch} from 'react-redux';
+import {transitionEnd,transitionRun} from './actions/transitionStatus'
+import {pageDown, pageUp} from './actions/flipPage'
+export default function App() {
+  const dispatch = useDispatch()
+  const innerRef = useRef(null);
+  const [page,setPage] = useState(0);
+  const [cc,setCc] = useState('aaa')
+  const [dd,setDd] = useState('aaa')
+  const loadStatus = useSelector(state=>state.loadStatus)
+  const pageIndex = useSelector(state=>state.pageIndex)
+  const switchPage = (e) => {
+    console.log(loadStatus)
+    if(loadStatus){
+        if(pageIndex!==0){
+          if(e.deltaY>0){
+            dispatch(pageDown())
+          }
+              
+          else if(e.deltaY<0){
+            dispatch(pageUp())            
+          }
+          
+        }else if(pageIndex===0){
+          if(e.deltaY>0){
+            dispatch(pageDown())
+          }
+        }
+    }         
+
   }
+  useEffect(()=>{
+    const div = innerRef.current;
+    div.addEventListener('transitionrun', loadCSS);
+    return ()=>{div.removeEventListener('transitionrun',loadCSS)}
+  },[])
+
+  const loadCSS = () => {
+      dispatch(transitionRun())
+  }
+  return (
+
+    <div  
+      ref={innerRef}
+      onWheel={switchPage}
+    >
+      <Blue
+        onTransitionEnd={()=>{
+          dispatch(transitionEnd())
+        }}
+      />
+      <Red/>
+    </div>
+
+  )
 }
-
-
-//Top - NavBar tel\address\links
-    //NavBar
-    //Section1 name position  right photo
-    //Section2 introduction
-    //Section3 Skills
-    //Section4 My works
-    //Section5 My interests
-    //Section6 Contact me
-

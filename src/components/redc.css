@@ -1,0 +1,17 @@
+.aaa{
+    width: 100px;
+}
+
+.bbb{
+    transform: translateX(-100%);
+    transition: transform 5s ease;
+}
+
+.ccc{
+    transform: translateX(-100%);
+    transition: transform 8s ease;
+}
+
+.ddd{
+    height: 100px;
+}

@@ -1,0 +1,26 @@
+.move-active{
+    transform: translate3d(0,-100%,0);
+    transition: transform 3s ease;
+}
+
+.move-return{
+    transform: translate3d(0,100vh,0);
+    transition: transform 1s ease;
+}
+
+.move{
+    position: absolute;
+    top:0px;
+    left:0px;    
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+}
+
+.move1{
+    height:100vh;
+}
+
+.move2{
+    height:0px;
+}
