@@ -1,6 +1,16 @@
+@font-face {
+  font-family: 'trump-gothic-pro';
+  font-weight: 400;
+  font-style: normal;
+  src: local('trump-gothic-pro'), url('./fonts/Trump Gothic Pro Regular.otf')  format("opentype");
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+ul{
+  list-style: none;
 }
 

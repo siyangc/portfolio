@@ -1,29 +1,34 @@
-import React,{useState,useEffect, useRef} from 'react'
+import React,{useState,useEffect} from 'react'
+
 import {useSelector, useDispatch} from 'react-redux';
-import {transitionEnd,transitionRun} from '../actions/transitionStatus'
+import {transitionEnd} from '../actions/transitionStatus'
 import './redc.css'
 export default function Redc(props) {
     const dispatch = useDispatch();
-    const a = ['aaaaaaaa','bbbbbbbbbbb']
-    const innerRef = useRef(null);
-    const transitionStatus = useSelector(state=>state.transitionStatus)
-
-    const [aa,setAa] = useState(0)
+    const a = ['aaaaaaaa','bbbbbbbbbbb','dddddd','dddddeee','gggggg','ddddddddddd','last']
+    const pageIndex = useSelector(state=>state.pageIndex)
+    const [b,setB] = useState('0')
+    const [moveClass,setMoveClass] = useState('aaa bbb')
+    useEffect(()=>{
+        if(pageIndex!==0)
+            setMoveClass('bbb ccc')
+    },[pageIndex])
     return (
         <div>
             <div 
-                className={props.css}
-                ref={innerRef}
-             onTransitionEnd={()=>setAa(props.page)}
+                className={moveClass}
+                onTransitionEnd={(e)=>{
+                    if(e.target.className==='aaa bbb')
+                        dispatch(transitionEnd())
+                    else if(e.target.className==='bbb ccc')
+                        setB(pageIndex)
+                        setMoveClass('aaa bbb')
+                }}
             >
-                {a[aa]}
+                {a[b]}
+                {b}
             </div>
-            <div 
-            className={props.css1}
-            onTransitionEnd={()=>dispatch(transitionEnd())}
-            >
-                dfgrtttttt
-            </div>
+
         </div>
     )
 }

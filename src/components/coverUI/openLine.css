@@ -1,0 +1,33 @@
+#openLine{
+    position: absolute;
+    margin: 0 0 0 -30px;
+    bottom: 0;
+    left: 50%;
+    width: 60px;
+    height: 5.24vw;
+    cursor: pointer;
+}
+
+#open-line-wrap{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    transition: transform 1.2s cubic-bezier(.165,.84,.44,1);
+}
+
+#open-line{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translate3d(0,0%,0);
+    background: linear-gradient(180deg,#ff3000,#ed0200,#ff096c,#d50082);
+}
+
+#openLine:hover #open-line-wrap{
+    transform: translate3d(0,20%,0);
+    transition: transform .8s cubic-bezier(.19,1,.22,1);
+}

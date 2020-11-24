@@ -1,0 +1,104 @@
+#projectPage-container{
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    text-align: center;
+    font-family: 'trump-gothic-pro';
+    font-size: calc(1rem + .2vw);
+}
+#projectPage-line-wrap{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width:18px;
+    overflow: hidden;
+}
+#projectPage-line{
+    left: 0;
+    right: 0;
+    background: #d1d6dc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.projectPage-line-show{
+    transform: translate3d(0%, 0px, 0px);
+    transition: transform 1s ease;
+    transition-delay: 2s;
+}
+.projectPage-line-hidden{
+    transform: translate3d(-102%, 0px, 0px);
+}
+#projectPage-top-wrap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+    text-align: center;
+    overflow: hidden;
+}
+#projectPage-top{
+    margin:auto;
+    width:18px;    
+    padding:7px;
+    
+}
+
+#projectPage-bottom-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+#projectPage-bottom{
+    text-align: center;
+    width:18px;
+    margin:auto;
+    padding:7px 0;
+    
+}
+.projectPage-top-show{
+    transform: translate3d(0%, 0px, 0px);
+    transition: transform 2s ease;
+}
+.projectPage-top-hidden{
+    transform: translate3d(0, -100%, 0px);
+    transition: transform 2s ease;
+}
+
+.projectPage-bottom-show{
+    transform: translate3d(0%, 0px, 0px);
+    transition: transform 2s ease;
+    transition-delay: 2s;
+}
+.projectPage-bottom-hidden{
+    transform: translate3d(0, 100%, 0px);
+    transition: transform 2s ease;
+}
+@media (max-width: 1200px){
+    #projectPage-container{
+        width: 92px;
+    }
+    #projectPage-line-wrap{
+        left:37px;
+    }
+}
+@media (max-width: 1500px) and (min-width: 1201px){
+    #projectPage-container{
+        width: 120px;
+    }
+    #projectPage-line-wrap{
+        left:51px;
+    }
+}
+@media (min-width: 1501px){
+    #projectPage-container{
+        width: 140px;
+    }
+    #projectPage-line-wrap{
+        left:61px;
+    }
+}

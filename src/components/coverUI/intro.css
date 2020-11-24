@@ -1,0 +1,67 @@
+#intro {
+    position: relative;
+}
+
+#intro-text {
+    position: absolute;
+    top: 22.1vw;
+    right: 0;
+    text-align: left;
+}
+
+.intro-text-block {
+    float: left;
+    margin-left: calc(1.1rem + .8vw);
+    line-height: calc(13px + .8vw);
+    color: #a3adb9;
+    font-size: calc(.42rem + .4vw); 
+}
+
+.intro-text {
+    width: 100%;
+}
+
+#intro-text-spe {
+    font-family: 'trump-gothic-pro';
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+@media (max-width: 1200px){
+    #intro {
+        width: 72vw;
+        height: 33.2vw;
+    }
+    .intro-text-block{
+        width: 23.8vw;
+    }
+    #intro-text-last{
+        padding-top: calc(4px + .05vw);
+    }
+}
+@media (max-width: 1500px) and (min-width: 1201px){
+    #intro {
+        width: 68vw;
+        height: 33.2vw;
+    }
+    .intro-text-block{
+        width: 21.8vw;
+    }
+    #intro-text-last{
+        padding-top: calc(3px + .05vw);
+    }
+}
+
+@media (min-width:1501px){
+    #intro {
+        width: 63.8vw;
+        height: 33.2vw;
+    }
+
+    .intro-text-block{
+        width: 20vw;
+    }
+    #intro-text-last{
+        padding-top: 4px;
+    }
+}

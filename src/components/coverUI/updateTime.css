@@ -1,0 +1,37 @@
+#updateTime{
+    position: absolute;
+    transform: translate3d(0px,0%,0px);
+}
+
+#update-left{
+    font-family: 'trump-gothic-pro';
+    font-size: calc(.35rem + .35vw);
+    letter-spacing: 1.4px;
+    color: #a3adb9;
+}
+
+#update-right{
+    font-family: 'trump-gothic-pro';
+    font-size: calc(.42rem + .42vw);
+    letter-spacing: 2px;
+    color: #fff;
+}
+@media (max-width: 1200px){
+    #updateTime{
+        top: 36px;
+        right: 90px;
+    }
+}
+@media (max-width: 1500px) and (min-width: 1201px){
+    #updateTime{
+        top: 51px;
+        right: 112px;
+    }
+}
+
+@media (min-width:1501px){
+    #updateTime{
+        top: 61px;
+        right: 126px;
+    }
+}

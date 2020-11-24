@@ -1,0 +1,37 @@
+#leftSider {
+    top: -6vh;
+    margin: 6vh;
+    width: 100vh;
+    font-size: calc(.42rem + .42vw);
+    transform-origin: top left;
+    transform: rotate(-90deg) translate3d(-100%,0,0);
+    position:absolute;
+    left:0;    
+    color:#fff;
+    letter-spacing: 2px;
+}
+
+#leftSider-left {
+    position:absolute;
+    top:0;
+    left:6.5vh;
+    transform: translate3d(0px,0%,0px);
+    font-family: 'trump-gothic-pro';
+    text-transform: uppercase;
+}
+
+#leftSider-center {
+    transform: translate3d(0px,0%,0px);
+    font-family: 'trump-gothic-pro';
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#leftSider-right {
+    transform: translate3d(0px,0%,0px);
+    font-family: 'trump-gothic-pro';
+    position: absolute;
+    top:0;
+    right: 6.5vh;
+    text-transform: uppercase;
+}

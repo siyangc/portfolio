@@ -1,0 +1,28 @@
+#cover {
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover-hidden{
+    transform: translate3d(0,-100%,0);
+    transition: transform 2s ease;
+}
+
+.cover-show{
+    transform: translate3d(0,0,0);
+    transition: transform 1s ease;
+}
+
+.cover-page{
+    position: absolute;
+    top:0px;
+    left:0px;    
+    overflow: hidden;
+    width: 100%;
+    z-index: 3;
+    right:0;
+    bottom:0
+}
+
