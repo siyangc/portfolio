@@ -12,7 +12,7 @@ export default function App() {
   const switchPage = (e) => {
     console.log(loadStatus)
     if(loadStatus){
-        if(pageIndex>0&&pageIndex<6){
+        if(pageIndex>0&&pageIndex<4){
           if(e.deltaY>0){
             dispatch(pageDown())
             dispatch(transitionRun())
@@ -28,7 +28,7 @@ export default function App() {
             dispatch(pageDown())  
             dispatch(transitionRun())          
           }
-        }else if(pageIndex===6){
+        }else if(pageIndex===4){
           if(e.deltaY<0){
             dispatch(pageUp())
             dispatch(transitionRun())

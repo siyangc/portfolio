@@ -1,9 +1,9 @@
 import React from 'react';
-import Redc from './redc';
 import Lines from './mainUI/Lines';
 import ProjectTag from './project/projectTag';
 import ProjectPage from './project/projectPage';
-
+import ProjectBtn from './project/projectBtn'
+import ProjectText from './project/projectText'
 import './main.css'
 export default function Main(props) {
  
@@ -11,11 +11,11 @@ export default function Main(props) {
         <div
          id='main'         
         >
-            <Redc pageIndex={props.pageIndex}/>
             <Lines />
             <ProjectPage pageIndex={props.pageIndex}/>
             <ProjectTag pageIndex={props.pageIndex}/>
-
+            <ProjectBtn pageIndex={props.pageIndex}/>
+            <ProjectText pageIndex={props.pageIndex}/>
         </div>
     )
 }

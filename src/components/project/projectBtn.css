@@ -1,0 +1,66 @@
+#projectBtn{
+    overflow: hidden;
+    position: absolute;
+    text-align: center;    
+}
+#projectBtn-wrap{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    cursor: pointer;
+}
+
+.projectBtn{
+    z-index: 1;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    font-family: trump-gothic-pro;
+    color: #181829;
+    letter-spacing: 2px;
+    transition: color .6s cubic-bezier(.165,.84,.44,1);    
+}
+
+.projectBtn-show{
+
+    transition: opacity 2s ease;
+    opacity: 1;
+}
+.projectBtn-hidden{
+  
+    transition: opacity 2s ease;
+    opacity: 0;
+}
+@media (max-width: 1200px){
+    #projectBtn{
+        bottom: 24px;
+        height: 40px;
+        line-height: 40px;
+        width: 150px;
+        margin: 0 22px;
+        left:calc(50% - 97px);
+    }
+}
+@media (max-width: 1500px) and (min-width: 1201px){
+    #projectBtn{
+        bottom: 38px;
+        height:44px;
+        line-height: 44px;
+        width: 166px;
+        margin: 0 28px;
+        left:calc(50% - 111px);
+    }
+}
+@media (min-width: 1501px){
+    #projectBtn{
+        bottom: 46px;
+        height: 48px;
+        line-height: 48px;
+        width: 170px;
+        margin: 0 34px;
+        left:calc(50% - 120px);
+    }
+}

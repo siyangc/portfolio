@@ -6,6 +6,11 @@ export default function ProjectPage(props) {
     useEffect(()=>{
         if(props.pageIndex!==0)
             setProjectPageTopClass('projectPage-top-hidden')
+        else if(props.pageIndex===0){
+            setPageIndex('')
+            setProjectPageTopClass('projectPage-top-show')
+        }
+
 
     },[props.pageIndex])
     return (
@@ -33,7 +38,7 @@ export default function ProjectPage(props) {
                 <div 
                 id='projectPage-bottom'
                 className={props.pageIndex===0?'projectPage-bottom-hidden':'projectPage-bottom-show'}
-                >8</div>
+                >4</div>
             </div>
             
         </div>
