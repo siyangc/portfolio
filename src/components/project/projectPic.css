@@ -1,0 +1,24 @@
+#projectPic-wrap{
+    right: -11vw;
+    transform: translate3d(0,-46%,0);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+
+#projectPic{
+    position: relative;
+    width: 52vw;
+    border-radius: 9px;
+}
+
+.projectPic-show{
+    opacity: 1;
+    transition: opacity 2s ease;
+    transition-delay: 1.5s;
+}
+
+.projectPic-hidden{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}

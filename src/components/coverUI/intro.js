@@ -22,6 +22,7 @@ export default function intro() {
                     </p>
                 </div>
             </div>
+            <img src='/photos/selfie.png'/>
         </div>
     )
 }

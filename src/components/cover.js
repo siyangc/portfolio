@@ -3,6 +3,7 @@ import LeftSider from './coverUI/leftSider'
 import UpdateTime from './coverUI/updateTime'
 import Intro from './coverUI/intro'
 import OpenLine from './coverUI/openLine'
+
 import './cover.css'
 
 import {transitionEnd} from '../actions/transitionStatus'

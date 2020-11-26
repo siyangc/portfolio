@@ -5,9 +5,9 @@ export default function ProjectText(props) {
     const textTitle = ['','SERVICE','LIFE','BUSINESS','GAME','']
     const textContent = [
         '',
-        'Element Migration was established in 2001, since then we have provided migration and recruitment services for over a thousand successful clients with over 18 years’ experience',
+        'Element Migration was established in 2001, since then we have provided migration and recruitment services for over a thousand successful clients. We always provide best services',
         'Discover the true meaning of relaxation in a region known for its celebration of the senses, the villa offers pure indulgence for your conference delegates or wedding guests',
-        'ZEN ELEMENT PROPERTY GROUP PTY. LTD. is located in MELBOURNE, VICTORIA, Australia and is part of the Real Estate Industry. ZEN ELEMENT PROPERTY GROUP PTY. LTD. has 11 total employees across all of its locations.',
+        'ZEN ELEMENT PROPERTY GROUP PTY. LTD. is located in MELBOURNE, VICTORIA, Australia and is part of the Real Estate Industry. This website introduces the basic business there.',
         'It is a recreation of Doodle Jump that originally comes for Android and IOS devices. This game is created using React, Redux and vanilla JavaScript. No third-party libraries were imported.',
         ''
     ]

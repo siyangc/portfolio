@@ -1,5 +1,6 @@
 #cover {
-    background: blue;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,4 +26,5 @@
     right:0;
     bottom:0
 }
+
 
